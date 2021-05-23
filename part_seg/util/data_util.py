@@ -17,7 +17,7 @@ def pc_normalize(pc):
 class PartNormalDataset(Dataset):
     def __init__(self, npoints=2500, split='train', normalize=False):
         self.npoints = npoints
-        self.root = '/work/zq0020/data/shapenetcore_partanno_segmentation_benchmark_v0_normal'
+        self.root = '/home/g1007540910/DATA/shapenetcore_partanno_segmentation_benchmark_v0_normal'
         self.catfile = os.path.join(self.root, 'synsetoffset2category.txt')
         self.cat = {}
         self.normalize = normalize
